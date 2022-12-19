@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <title>Document</title>
+</head>
+<body>
+
+    
+  <header class="header">
+      <div class="container">
+          <div class="header__inner">
+              <div class="header__logo">Kazakhstan</div>
+
+              <nav class="nav">
+                <a class="nav__link" href="index.html">Main</a>
+                <a class="nav__link" href="photos.html">Photos</a>
+                <a class="nav__link" href="travel.html">Travel</a>
+                <a class="nav__link" href="nature.html">Nature</a>
+                <a class="nav__link" href="traditions.html">Traditions</a>
+                <!-- <a class="nav__link" href="about.html">About</a>
+                <a class="nav__link" href="contact.html">Contact</a>
+                <a class="nav__link" href="login.html">Log In</a> -->
+                
+            </nav>
+          </div>
+      </div>
+</header>
+<div class="cont">
+<main>
+  <h2 class="h2">CONTACT US</h2>
+  <form class="form">
+    <p><input type="text" name="name" class="feedback-input" placeholder="Name" id="name"></p>
+    <p><input type="email" name="email" class="feedback-input" placeholder="Email" id="email"></p>
+    <p><textarea name="text" id="comment" placeholder="Message" class="feedback-input"></textarea></p>
+    <input type="submit" value="Submit" class="button-submit">
+    <div class="ease"></div>
+  </form>
+</main>  
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<body>
+
+<div  v-bind:style = "styleobj" v-on:mouseover = "changecolor" v-on:mouseout = "originalcolor" id="app">
+  <h4>{{ message }}</h4>
+</div>
+
+<script>
+var myObject = new Vue({
+  el: '#app',
+  data: {message: 'We will contact you within two days'},
+  methods : {
+               changecolor : function() {
+                 this.message
+                  this.styleobj.Color = "green";
+               },
+               originalcolor : function() {
+                 this.message
+                  this.styleobj.Color = "red";
+               }
+              }
+})
+</script>

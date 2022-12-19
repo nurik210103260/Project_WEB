@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <title>Kazakhstan</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+               
+
+                <nav class="nav">
+                    <a class="nav__link" href="index.html">Main</a>
+                    <a class="nav__link" href="photos.html">Photos</a>
+                    <a class="nav__link" href="travel.html">Travel</a>
+                    <a class="nav__link" href="nature.html">Nature</a>
+                    <a class="nav__link" href="traditions.html">Traditions</a>
+                    <a class="nav__link" href="about.html">About</a>
+                    <a class="nav__link" href="contact.html">Contact</a>
+                    <a class="nav__link" href="login.html">Log In</a>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <h2 class="intro__suptitle"> Open up to the neW</h2>
+                <h1  class="intro__title">Welcome to Kazakhstan</h1>
+
+                <a class="btn" href="#">learn More</a>
+            </div>
+        </div>
+    </div>
+    <div class="object">
+      <object data="astana.mp4" width="400" height="300"></object>
+    </div>
+
+
+
+      <section class="section">
+          <div class="container">
+              <div class="section__header">
+                  <h3  class="section__suptitle" style="bottom: 30px;" >
+                      More
+                    
+                  </h3>
+                  <h2 class="section__title">
+                      History of Kazakhstan
+                  </h2>
+                  <div class="section__text">
+                      <p id="test">In 1465, Kazakh Khanate emerged as a result of dissolution of Golden Horde. Established by Janibek Khan and Kerei Khan, it continued to be ruled by to Turco-Mongol clan of Tore (Jochid dynasty).
+                        Throughout this period, traditional nomadic life and a livestock-based economy continued to dominate the steppe. In the 15th century, a distinct Kazakh identity began to emerge among the Turkic tribes. This was followed by the Kazakh War of Independence where the khanate gained its sovereignty from the Shaybanids. The process was consolidated by the mid-16th century with the appearance of the Kazakh language, culture, and economy...</p>
+                  </div>
+                  <button id="button">Toggle between hiding and showing the paragraphs</button>
+              </div>
+          </div>
+      </section>
+      
+
+      <div class="btn2__pos" style="position: relative; bottom: 75px;">
+        <a class="btn2" href="#">learn More</a>
+      </div>
+      <div class="video">
+        <video width="500" height="400" controls>
+          <source src="geo.mp4" type="video/mp4">
+        </video>
+        <br>
+      </div>
+      <div class="audio">
+        <h4>Kurmangazy: Kuy-Aday</h4>
+        <br>
+        <audio controls>
+          <source src="kurmangazy.mp3" type="audio/mp3">
+        </audio>
+      </div>
+
+<div id="flip">
+    <h2 class="presidents">
+    Presidents of Kazakhstan</h2>
+</div>
+      
+
+      <table id="panel" class="table">
+
+        
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Nursultan </td>
+            <td>Nazarbayev</td>
+            <td>April 24, 1990 - December 16, 1991/td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Qasym-Jomart</td>
+            <td>Toqaev</td>
+            <td>from June 9, 2019</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div>
+        <a href="https://en.wikipedia.org/wiki/President_of_Kazakhstan"><button type="button" class="btn btn-info" id="w9">Learn more...</button></a>
+  
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+      <script>
+        $(document).ready(function() {
+          $("#button").click(function(){
+            $("#test").fadeToggle("2000");
+             });
+            });
+
+            $("#flip").click(function(){
+            $("#panel").slideToggle("fast");
+            });
+
+            // $(".section__text").click(function(){
+            //     $(".onfo-content").slideToggle(3000)
+            // });
+    </script>
+    </body>
+</html>
